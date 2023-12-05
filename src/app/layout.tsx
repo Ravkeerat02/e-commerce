@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { Jost } from 'next/font/google'
 
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
@@ -8,13 +9,11 @@ import { Providers } from './_providers'
 import { InitTheme } from './_providers/Theme/InitTheme'
 import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
 
-import { Jost } from 'next/font/google'
-
 import './_css/app.scss'
 
 const jost = Jost({
   subsets: ['latin'],
-  weights: [400, 700],
+  weight: ['400', '700'],
   variable: '--font-jost',
 })
 
