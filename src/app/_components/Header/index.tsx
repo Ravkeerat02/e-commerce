@@ -1,37 +1,26 @@
-'use client'
+{
+  /* eslint-disable @next/next/no-img-element */
+}
 
 import React from 'react'
 import Link from 'next/link'
 
-import { Header as HeaderType } from '../../../../payload/payload-types'
-import { useAuth } from '../../../_providers/Auth'
-import { Button } from '../../Button'
-import { CartLink } from '../../CartLink'
-import { CMSLink } from '../../Link'
+import { Header } from '../../../payload/payload-types'
+import { fetchHeader } from '../../_api/fetchGlobals'
+import HeaderComponent from './HeaderComponent'
 
-import classes from './index.module.scss'
+export async function Header() {
+  let header: Header | null = null
 
-export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
-  const navItems = header?.navItems || []
-  const { user } = useAuth()
+  try {
+    header = await fetchHeader()
+  } catch (error) {
+    console.log(error)
+  }
 
   return (
-    <nav className={[classes.nav, user === undefined && classes.hide].filter(Boolean).join(' ')}>
-      {navItems.map(({ link }, i) => {
-        return <CMSLink key={i} {...link} appearance="none" />
-      })}
-      <CartLink />
-      {user && <Link href="/account">Account</Link>}
-      {!user && (
-        <Button
-          el="link"
-          href="/login"
-          label="Login"
-          appearance="primary"
-          onClick={() => (window.location.href = '/login')}
-        />
-      )}
-      {user && <CartLink />}
-    </nav>
+    <>
+      <HeaderComponent header={header} />
+    </>
   )
 }
