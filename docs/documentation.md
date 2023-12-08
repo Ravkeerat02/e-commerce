@@ -48,12 +48,14 @@ To work with the Payload CMS database, follow these steps:
 ### Language
 
 - TypeScript
+- React
 
 ### Frameworks and Libraries
 
 - SCSS
 - Payload CMS
 - GraphQL
+- Stripe
 
 ## Folder Structure
 
@@ -71,6 +73,24 @@ List important npm scripts:
 - `npm run build`: Build the production-ready app.
 - `npm run lint`: Run linting checks.
 
-## Features 
+## Features
 
-To be added 
+### 1. Filtering
+
+Implement powerful product filtering to help users narrow down their search based on various criteria such as price range, category, etc.
+
+### 2. Categorizing
+
+Organize products into categories to enhance the user experience and make it easier for users to find what they are looking for.
+
+### 3. Payment
+
+Integrate Stripe for seamless and secure payment processing. Allow users to make purchases and transactions with confidence.
+
+### 4. Creating/Signing up
+
+Enable users to create accounts and sign up for personalized experiences. Capture essential user information to enhance user engagement.
+
+### 5. Login
+
+Implement a secure login system to authenticate users. Provide a secure and user-friendly way for users to access their accounts.
