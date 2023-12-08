@@ -15,11 +15,11 @@
   }
 
   p {
-    color: var(--color-gray-500);
+    color: #ff3366; /* Vibrant color */
   }
 
   // Add contrasting font color
-  color: var(--contrasting-text-color);
+  color: #00cc66; /* Contrasting color */
 }
 
 .formTitle {
@@ -91,8 +91,8 @@
 
   @include mid-break {
     backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    background-color: #ffcc00; /* Vibrant background color */
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.2); /* Adjust shadow for contrast */
   }
 
   @include small-break {
@@ -106,5 +106,5 @@
 
 .message {
   margin-bottom: var(--base);
-  color: var(--contrasting-text-color); // Add contrasting font color
+  color: #00cc66; /* Contrasting color */
 }

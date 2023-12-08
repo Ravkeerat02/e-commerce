@@ -5,8 +5,8 @@
 
 :root {
   --base: 24px;
-  --font-body: 'Jost',sans-serif;
-  --font-jost: 'Jost',sans-serif;
+  --font-body: 'Roboto', sans-serif; // Change to a different appealing font
+  --font-jost: 'Jost', sans-serif;
 
   --gutter-h: 180px;
   --block-padding: 120px;
@@ -48,70 +48,28 @@ body {
   font-family: var(--font-jost);
   margin: 0;
   padding: 0;
-  color: var(--color-dark-500);
-  display:flex; 
-  flex-flow:column
+  color: #333; // Change to an appealing text color (e.g., black or dark gray)
+  display: flex;
+  flex-flow: column;
 }
 
-.main{
-  flex: 1 1 auto ;
+.main {
+  flex: 1 1 auto;
 }
-
 
 ::selection {
-  background: var(--color-dark-500);
-  color: var(--color-base-800);
+  background: #ffcc00; // Change to an appealing accent color
+  color: #333;
 }
 
 ::-moz-selection {
-  background: var(--color-dark-50);
-  color: var(--color-base-800);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-h1 {
-  @extend %h1;
-}
-
-h2 {
-  @extend %h2;
-}
-
-h3 {
-  @extend %h3;
-}
-
-h4 {
-  @extend %h4;
-}
-
-h5 {
-  @extend %h5;
-}
-
-h6 {
-  @extend %h6;
-}
-
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin:0 ; 
-  padding:0;
-  list-style: none;
+  background: #ffcc00; // Change to an appealing accent color
+  color: #333;
 }
 
 a {
-  color: var(--color-dark-500);
-
+  color: #ff3366; // Change to an appealing link color (e.g., pink)
+  
   &:focus {
     opacity: .8;
     outline: none;
@@ -121,6 +79,32 @@ a {
     opacity: .7;
     outline: none;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ff3366; // Change to an appealing heading color (e.g., pink)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 svg {
