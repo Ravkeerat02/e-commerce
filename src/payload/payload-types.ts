@@ -173,8 +173,10 @@ export interface Media {
   height?: number;
 }
 export interface Category {
+  name: ReactNode;
   id: string;
   title?: string;
+  media?: string | Media;
   parent?: string | Category;
   breadcrumbs?: {
     doc?: string | Category;
