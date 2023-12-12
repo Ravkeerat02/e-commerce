@@ -7178,7 +7178,7 @@ qs-middleware@1.0.3:
   dependencies:
     qs "~6.4.0"
 
-qs@^6.11.0, qs@^6.9.1, qs@6.11.2:
+qs@^6.11.0, qs@^6.11.2, qs@^6.9.1, qs@6.11.2:
   version "6.11.2"
   resolved "https://registry.npmjs.org/qs/-/qs-6.11.2.tgz"
   integrity sha512-tDNIz22aBzCDxLtVH++VnTfzxlfeK5CbqohpSqpJgj1Wg/cQbStNAz3NuqCs5vV+pjBsK4x4pN9HlVh7rcYRiA==

@@ -7,6 +7,11 @@ import CategoryCard from './CategoryCard'
 import classes from './index.module.scss'
 
 const Categories = ({ categories }: { categories: Category[] }) => {
+  // Add a null check for categories
+  if (!categories) {
+    return null // or you can return a default component or message
+  }
+
   return (
     <section className={classes.container}>
       <div className={classes.titleWrapper}>
@@ -15,9 +20,9 @@ const Categories = ({ categories }: { categories: Category[] }) => {
       </div>
 
       <div className={classes.list}>
-        {/* {categories.map(category => {
-          return <CategoryCard key={category.id} category={category} />
-        })} */}
+        {categories.map(category => (
+          <CategoryCard key={category.id} category={category} />
+        ))}
       </div>
     </section>
   )
