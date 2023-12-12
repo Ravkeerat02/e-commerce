@@ -68,7 +68,8 @@ body {
 }
 
 a {
-  color: #ff3366; // Change to an appealing link color (e.g., pink)
+  color: #ff3366; 
+  text-decoration: none;
   
   &:focus {
     opacity: .8;
