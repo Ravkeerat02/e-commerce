@@ -1,0 +1,28 @@
+/* Import common styles */
+@import "../../../_css/common";
+
+/* Styles for the form */
+.form {
+  margin-bottom: var(--base);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 30px; /* Added semicolon */
+
+ 
+}
+
+/* Styles for the submit button */
+.submit {
+  width: 100%;
+  
+}
+
+/* Styles for messages or notifications */
+.message {
+  margin-bottom: var(--base);
+  color: var(--text-color); /* Set text color for messages */
+  font-size: 14px; /* Adjust font size for messages */
+}
