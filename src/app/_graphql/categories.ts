@@ -9,17 +9,17 @@ export const PRODUCT_CATEGORIES = `categories {
 
 export const CATEGORIES = `
   query Categories {
-    Categories(limit:300) {
-      docs{
-        id 
+    Categories(limit: 300) {
+      docs {
+        id
         title
-        // image 
         media {
-          alt 
-          width 
-          height 
+          alt
+          width
+          height
           url
         }
       }
-    }}
+    }
+  }
 `
