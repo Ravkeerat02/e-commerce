@@ -6,6 +6,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  height: 400px;
+  padding-top: 20px;
 }
 
 .content {
@@ -65,12 +67,17 @@
 .mediaWrapper {
   text-decoration: none;
   display: block;
+  overflow: hidden;
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9; // Set the aspect ratio according to your design
+  max-height: 500px; // Set the max height based on your design requirements
 }
 
 .image {
   object-fit: cover;
+  width: 100%;
+  height:100%;
+  position: absolute;
 }
 
 .placeholder {
