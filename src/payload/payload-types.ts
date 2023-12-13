@@ -173,7 +173,6 @@ export interface Media {
   height?: number;
 }
 export interface Category {
-  name: ReactNode;
   id: string;
   title?: string;
   media?: string | Media;
@@ -191,7 +190,7 @@ export interface Product {
   id: string;
   title: string;
   publishedOn?: string;
-  layout: (
+  layout?: (
     | {
         invertBackground?: boolean;
         richText: {
